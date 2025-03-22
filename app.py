@@ -5,6 +5,7 @@ from api_key import api_key
 
 # Configure the generative AI model
 genai.configure(api_key=api_key)
+model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 generation_config = {
     "temperature": 0.4,
